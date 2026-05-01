@@ -1,13 +1,13 @@
 ---
-name: claude-display
+name: claude-conversation-summary
 description: Use when the user asks about the current conversation summary, statusline display, or wants to check/update what the statusline is showing. Also use when troubleshooting the summary hook or statusline configuration.
 ---
 
-# Claude Display
+# Claude Conversation Summary
 
 ## Overview
 
-Claude Display is a plugin that shows a live conversation summary in the Claude Code statusline. It uses a Stop hook to periodically summarize the session via Haiku and writes the result to `~/.claude/display/summary.txt`.
+Claude Conversation Summary is a plugin that shows a live conversation summary in the Claude Code statusline. It uses a Stop hook to periodically summarize the session via Haiku and writes the result to `~/.claude/display/summary.txt`.
 
 ## When to Use
 

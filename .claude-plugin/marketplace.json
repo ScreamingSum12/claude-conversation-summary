@@ -1,0 +1,11 @@
+{
+  "name": "claude-conversation-summary",
+  "description": "Live conversation summary in your Claude Code statusline. A Stop hook periodically calls Haiku to summarize the session and writes it to a file your statusline can display.",
+  "plugins": [
+    {
+      "name": "claude-conversation-summary",
+      "path": ".",
+      "description": "Live conversation summary in your Claude Code statusline."
+    }
+  ]
+}

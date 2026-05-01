@@ -1,5 +1,5 @@
 #!/bin/bash
-# claude-display: Stop + SessionEnd hook
+# claude-conversation-summary: Stop + SessionEnd hook
 #
 # On Stop: every N assistant messages, summarizes the conversation via
 # `claude -p --model haiku` and writes it to ~/.claude/display/summary.txt
@@ -237,7 +237,7 @@ if [[ -n "$SUMMARY" ]]; then
   echo "$SUMMARY" > "$SUMMARY_FILE"
   save_state "$MSG_COUNT"
   log "Summary updated: $SUMMARY"
-  >&2 echo "claude-display: $SUMMARY"
+  >&2 echo "claude-conversation-summary: $SUMMARY"
 else
   log "No summary returned from claude CLI"
 fi
