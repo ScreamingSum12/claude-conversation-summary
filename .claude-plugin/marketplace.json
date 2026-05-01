@@ -1,11 +1,24 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "claude-conversation-summary",
   "description": "Live conversation summary in your Claude Code statusline. A Stop hook periodically calls Haiku to summarize the session and writes it to a file your statusline can display.",
+  "owner": {
+    "name": "Kyle Handy",
+    "email": "kylehandy3220@gmail.com"
+  },
   "plugins": [
     {
       "name": "claude-conversation-summary",
-      "path": ".",
-      "description": "Live conversation summary in your Claude Code statusline."
+      "description": "Live conversation summary in your Claude Code statusline. A Stop hook periodically calls Haiku to summarize the session and writes it to a file your statusline can display.",
+      "author": {
+        "name": "Kyle Handy"
+      },
+      "category": "productivity",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/ScreamingSum12/claude-conversation-summary.git"
+      },
+      "homepage": "https://github.com/ScreamingSum12/claude-conversation-summary"
     }
   ]
 }
