@@ -1,0 +1,27 @@
+{
+  "description": "Periodically summarizes Claude Code conversations and writes to statusline display file",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/summary-updater.sh\"",
+            "timeout": 45
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/summary-updater.sh\" --final",
+            "timeout": 45
+          }
+        ]
+      }
+    ]
+  }
+}
