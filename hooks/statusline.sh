@@ -1,5 +1,5 @@
 #!/bin/bash
-# claude-display statusline script
+# claude-conversation-summary statusline script
 #
 # Reads the summary file and session metadata to build a compact statusline.
 # Configure in ~/.claude/settings.json:
