@@ -5,10 +5,7 @@
   "author": {
     "name": "Kyle Handy"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ScreamingSum12/claude-conversation-summary"
-  },
+  "repository": "https://github.com/ScreamingSum12/claude-conversation-summary",
   "license": "MIT",
   "keywords": ["statusline", "summary", "display", "conversation", "context"]
 }
